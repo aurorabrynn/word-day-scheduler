@@ -120,5 +120,26 @@ seventeenBtn.addEventListener("click", function () {
     localStorage.setItem("taskFive", seventeen.val());
 })
 
+window.onload = function () {
+    var taskNine = localStorage.getItem("taskNine");
+    var taskTen = localStorage.getItem("taskTen");
+    var taskEleven = localStorage.getItem("taskEleven");
+    var taskTwelve = localStorage.getItem("taskTwelve");
+    var taskOne = localStorage.getItem("taskOne");
+    var taskTwo = localStorage.getItem("taskTwo");
+    var taskThree = localStorage.getItem("taskThree");
+    var taskFour = localStorage.getItem("taskFour");
+    var taskFive = localStorage.getItem("taskFive");
+
+    if (taskNine !== null) $('#nine').val(taskNine);
+    if (taskTen !== null) $('#ten').val(taskTen);
+    if (taskEleven !== null) $('#eleven').val(taskEleven);
+    if (taskTwelve !== null) $('#twelve').val(taskTwelve);
+    if (taskOne !== null) $('#thirteen').val(taskOne);
+    if (taskTwo !== null) $('#fourteen').val(taskTwo);
+    if (taskThree !== null) $('#fifteen').val(taskThree);
+    if (taskFour !== null) $('#sixteen').val(taskFour);
+    if (taskFive !== null) $('#seventeen').val(taskFive);
+}
 
 timeColors();
