@@ -84,9 +84,41 @@ function timeColors() {
     }
 }
 
-
-save.on("click", function () {
-    localStorage.setItem("task", description.value);
+nineBtn.addEventListener("click", function () {
+    localStorage.setItem("taskNine", nine.val());
 });
+
+tenBtn.addEventListener("click", function () {
+    localStorage.setItem("taskTen", ten.val());
+});
+
+elevenBtn.addEventListener("click", function () {
+    localStorage.setItem("taskEleven", eleven.val());
+});
+
+twelveBtn.addEventListener("click", function () {
+    localStorage.setItem("taskTwelve", twelve.val());
+});
+
+thirteenBtn.addEventListener("click", function () {
+    localStorage.setItem("taskOne", thirteen.val());
+});
+
+fourteenBtn.addEventListener("click", function () {
+    localStorage.setItem("taskTwo", fourteen.val());
+});
+
+fifteenBtn.addEventListener("click", function () {
+    localStorage.setItem("taskThree", fifteen.val());
+});
+
+sixteenBtn.addEventListener("click", function () {
+    localStorage.setItem("taskFour", sixteen.val());
+});
+
+seventeenBtn.addEventListener("click", function () {
+    localStorage.setItem("taskFive", seventeen.val());
+})
+
 
 timeColors();
